@@ -6,4 +6,5 @@
     <dimen name="margin_left_producto">30dp</dimen>
     <dimen name="paddingToolbar">10dp</dimen>
     <dimen name="margin_top_prod">15dp</dimen>
+    <dimen name="margin_boton_float">16dp</dimen>
 </resources>

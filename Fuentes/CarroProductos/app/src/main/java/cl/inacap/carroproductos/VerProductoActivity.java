@@ -41,7 +41,7 @@ public class VerProductoActivity extends AppCompatActivity {
         this.tituloToolbar = findViewById(R.id.titulo_toolbar);
         if(getIntent() != null){
             //Me enviaron cosas y que vengo desde otro activity
-            Producto producto = (Producto) getIntent().getSerializableExtra("producto");
+            Producto producto = (Producto) getIntent().getSerializableExtra("productos");
             this.nombreTxt.setText(producto.getNombre());
             this.tituloToolbar.setText(producto.getNombre());
             Picasso.get().load(producto.getFoto())

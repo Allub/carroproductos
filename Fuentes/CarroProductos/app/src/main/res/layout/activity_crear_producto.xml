@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        ></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Nombre del Producto"
+        android:textSize="@dimen/titulo_app_size"
+        android:layout_marginTop="@dimen/margin_top_prod"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/nombre_prod_txt_cr"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Precio"
+        android:textSize="@dimen/titulo_app_size"
+        android:layout_marginTop="@dimen/margin_top_prod"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/precio_prod_txt_cr"
+        android:inputType="numberSigned"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Url de Foto"
+        android:textSize="@dimen/titulo_app_size"
+        android:layout_marginTop="@dimen/margin_top_prod"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/foto_txt_cr"
+        android:inputType="textUri"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="descripcion"
+        android:textSize="@dimen/titulo_app_size"
+        android:layout_marginTop="@dimen/margin_top_prod"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/desc_prod_txt_cr"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/crear_btn"
+        android:text="CREAR PRODUCTO"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/margin_top_prod"
+        android:layout_height="wrap_content"></Button>
+</LinearLayout>
